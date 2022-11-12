@@ -39,6 +39,9 @@ for i in range(10):
 
     score = int((20 - time) * 1000)
 
+    if score < 0:
+        score = 0
+
     speed = int(len(word) * (60 // time)) # 분당 타자수를 정수형으로 표현하기 위한 것
 
     wrongIndex = -1
